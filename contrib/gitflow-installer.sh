@@ -22,7 +22,7 @@ fi
 
 EXEC_FILES="git-flow"
 SCRIPT_FILES="git-flow-init git-flow-feature git-flow-hotfix git-flow-release git-flow-support git-flow-version gitflow-common gitflow-shFlags"
-SUBMODULE_FILE="gitflow-shFlags"
+SUBMODULE_FILE="gitflow-shFlags.sh"
 
 echo "### gitflow no-make installer ###"
 

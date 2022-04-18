@@ -60,9 +60,10 @@ case "$1" in
 			echo "Submodules look up to date"
 		else
 			echo "Updating submodules"
+			echo "Changing Global URL"
+			git config --global url."https://".insteadOf git://
 			lastcwd=$PWD
 			cd "$REPO_NAME"
-			git config --global url."git@github.com:".insteadOf git://github.com/
 			git submodule init
 			git submodule update
 			cd "$lastcwd"

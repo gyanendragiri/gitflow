@@ -62,6 +62,7 @@ case "$1" in
 			echo "Updating submodules"
 			lastcwd=$PWD
 			cd "$REPO_NAME"
+			git config --global url."git@github.com:".insteadOf git://github.com/
 			git submodule init
 			git submodule update
 			cd "$lastcwd"
